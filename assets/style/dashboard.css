@@ -1,0 +1,190 @@
+.dashboard {
+  height: 100vh;
+  width: calc(100% - 5rem);
+  margin-left: 5rem;
+  display: flex;
+}
+
+.company,
+.flight,
+.client,
+.scheduling {
+  display: none;
+}
+
+.dashboard-manager {
+  height: inherit;
+  width: 18rem;
+  background-color: #16120d;
+  display: flex;
+}
+
+.dashboard-form {
+  height: inherit;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  padding: 1rem;
+  justify-content: space-evenly;
+}
+
+.dashboard-field {
+  padding: 0.2rem;
+}
+
+.dashboard-field-input {
+  padding: 0.35rem 1rem;
+  font-size: 1.2rem;
+  outline: none;
+  border-radius: 4rem;
+  border: none;
+  background-color: #1e1b18;
+  color: #d8315b;
+}
+
+.dashboard-field-label {
+  display: block;
+  color: #fffaff;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+
+.dashboard-two-fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-field-select {
+  width: 16rem;
+  border: none;
+  border-radius: 5rem;
+  padding: 0.2rem 1rem;
+  outline: none;
+  background-color: #1e1b18;
+  color: #d8315b;
+  overflow: hidden;
+}
+
+.dashboard-field-select-multiple {
+  width: 16rem;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.2rem 1rem;
+  outline: none;
+  background-color: #1e1b18;
+  color: #d8315b;
+  overflow-y: scroll;
+}
+.dashboard-field-select-multiple::-webkit-scrollbar-thumb {
+  background-color: #d8315b;
+}
+.dashboard-title {
+  font-family: "RocknRoll One", sans-serif;
+  color: #fffaff;
+}
+
+.dashboard-data {
+  overflow-x: scroll;
+  background-color: #1e1b18;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: #16120d;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 1px solid #141210;
+  border-radius: 1rem;
+  background-color: #363534;
+}
+
+.dashboard-table {
+  width: inherit;
+  text-align: center;
+}
+
+.dashboard-thead {
+  background-color: #d8315b;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.dashboard-thead th {
+  box-sizing: content-box;
+  /* border-right: 2px solid #1e1b18; */
+}
+
+.dashboard-tbody {
+  color: #fffaff;
+}
+
+.dashboard-tbody td {
+  border-right: 2rem solid transparent;
+}
+
+.dashboard-tbody tr:nth-child(odd) {
+  background-color: #16120d;
+}
+
+.dashboard-table-button {
+  border: none;
+  padding: 0.3rem 0.5rem;
+  margin: 0.3rem;
+  border-radius: 5rem;
+  background-color: #d8315b;
+  font-weight: bold;
+  color: #1e1b18;
+  transition: 0.3s;
+}
+
+.dashboard-table-button:hover {
+  filter: brightness(0.87);
+}
+
+@media screen and (max-width: 667px) {
+  .dashboard {
+    height: 200vh;
+    flex-direction: column;
+  }
+
+  .dashboard-manager {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+  }
+
+  .dashboard-form {
+    align-items: center;
+
+    background-color: #d8315b;
+  }
+  .dashboard-two-fields {
+    justify-content: center;
+  }
+
+  .dashboard-data {
+    height: 100vh;
+  }
+
+  .dashboard-title {
+    color: #16120d;
+  }
+
+  .dashboard-thead {
+    background-color: #fffaff;
+    padding: 2rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+
+  .dashboard-table-button {
+    background-color: #fffaff;
+    color: #d8315b;
+  }
+}

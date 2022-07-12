@@ -1,0 +1,46 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 5rem);
+  margin-left: 5rem;
+}
+
+.box-1 {
+  position: relative;
+  height: calc(100vh - 6rem);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+  background-image: url(../img/douglas-bagg-FB406CKGL0Q-unsplash.jpg);
+}
+
+.banner-title {
+  text-align: center;
+  color: #fffaff;
+  font-size: 8rem;
+  font-family: "RocknRoll One", sans-serif;
+  text-shadow: 0.3rem 0.3rem 3px black;
+}
+
+.banner-description {
+  margin-top: 2rem;
+  text-align: center;
+  color: #fffaff;
+  font-size: 1.5rem;
+  font-family: "RocknRoll One", sans-serif;
+  text-shadow: 0.1rem 0.1rem 3px black;
+ background-color: #df3131;
+ background-size: 0rem;
+  padding: 2rem 0.2rem;
+}

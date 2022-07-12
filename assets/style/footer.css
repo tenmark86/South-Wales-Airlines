@@ -1,0 +1,70 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5rem;
+  width: calc(100% - 5rem);
+  padding: 2rem;
+
+  background-color: #0a2463;
+}
+
+.dev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dev-image {
+  height: 8rem;
+  border-radius: 8rem;
+  margin: 1rem;
+}
+
+.dev-name {
+  color: #d8315b;
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.footer-developer-team {
+    color: #fffaff;
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.dev-social {
+  width: 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.dev-social-media {
+  list-style: none;
+}
+
+.dev-social-media-icon {
+  width: 2rem;
+  fill: #d8315b;
+  transition: 0.3s;
+}
+
+.dev-social-media-icon:hover {
+  fill: #d36a84;
+}
+
+.footer-credits {
+  color: #fffaff;
+}
+
+.footer-credits-link {
+  text-decoration: none;
+  color: #d8315b;
+  transition: 0.3s;
+}
+
+.footer-credits-link:hover {
+  color: #d36a84;
+}
